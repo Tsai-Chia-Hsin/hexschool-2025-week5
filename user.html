@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <title>user</title>
-    <script type="module" crossorigin src="/hexschool-2025-week5/assets/main-BTJMz5WS.js"></script>
-    <link rel="stylesheet" crossorigin href="/hexschool-2025-week5/assets/main-DF0y-QD1.css">
+    <script type="module" crossorigin src="/hexschool-2025-week5/assets/main-Cp5tLrEP.js"></script>
+    <link rel="stylesheet" crossorigin href="/hexschool-2025-week5/assets/main-BSq71ae2.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary dorder-bottom">
@@ -15,12 +15,10 @@
     <a class="navbar-brand" href="#">
         <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week5/logo.svg" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item  me-3">
+ 
+    <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+        <li class="nav-item me-3">
           <a class="nav-link active" aria-current="page" href="#">服務方案</a>
         </li>
         <li class="nav-item me-3">
@@ -31,11 +29,22 @@
         </li>
       </ul>
     </div>
-        <a href="user.html">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true" alt="" class="rounded-circle user-image border me-2">Mokumaru
-        </a>
-  </div>
-</nav>    <main class="bg-natural-95">
+     <!-- 右：使用者資訊 + 漢堡選單 -->
+    <div class="d-flex align-items-center order-3">
+      <a href="user.html" class="d-flex align-items-center me-2">
+        <img class="user-image rounded-circle border me-2" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true" alt="">
+        Mokumaru
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+</nav>
+
+       <main class="bg-natural-95">
        <!-- 切換頁按鈕 -->
         <div class="container py-7">
           <div class="row justify-content-center">
@@ -179,16 +188,16 @@
                 role="tabpanel" aria-labelledby="pills-plan-tab" tabindex="0">
                   <form action="">
                     <!-- 1.職旅計劃概況 -->
-                    <div class="d-flex gap-4 border-bottom pb-5 mb-5">
+                    <div class="row g-4 border-bottom pb-5 mb-5">
                       <!-- 1-1左側類別名稱 -->
-                      <div class="flex-shrink side-width">
+                      <div class="col-lg-3 d-flex justify-content-between d-lg-block">
                         <h2 class="fs-4 mb-3">職旅計劃概況</h2>
                         <p class="text-natural-50">欄位皆為
                           <span class="badge rounded-pill text-bg-danger ms-1">必填</span>
                         </p>
                       </div>
                       <!-- 1-2右側表單區塊 -->
-                      <div class="form-side-width">
+                      <div class="col-lg-9">
                         <!-- 1-2-1目前職業狀態 -->
                         <div class="mb-4">
                           <p class="mb-2">目前職業狀態</p>
@@ -312,16 +321,16 @@
                       </div>
                     </div>
                     <!-- 2.職涯規劃 -->
-                    <div class="d-flex gap-4 border-bottom pb-5 mb-5">
+                    <div class="row g-4 border-bottom pb-5 mb-5">
                       <!-- 2-1左側類別名稱 -->
-                      <div class="flex-shrink side-width">
+                      <div class="col-lg-3 d-flex justify-content-between d-lg-block">
                         <h2 class="fs-4 mb-3">職涯規劃</h2>
                           <p class="text-natural-50">欄位皆為
                             <span class="badge rounded-pill text-bg-danger ms-1">必填</span>
                           </p>
                       </div>
                       <!-- 2-2右側表單區塊 -->
-                       <div class="form-side-width">
+                       <div class="col-lg-9">
                         <!-- 2-2-1 年短期職涯目標 -->
                         <div class="mb-4">
                           <div class="form-floating">
@@ -464,14 +473,14 @@
                       </div>
                     </div>
                     <!-- 3.專業技能 -->
-                    <div class="d-flex gap-4 border-bottom pb-5 mb-5">
+                    <div class="row g-4 border-bottom pb-5 mb-5">
                       <!-- 3-1左側類別名稱 -->
-                      <div class="flex-shrink side-width">
+                      <div class="col-lg-3 d-flex justify-content-between d-lg-block">
                         <h2 class="fs-4 mb-3">專業技能區塊</h2>
                           <p class="text-natural-50">欄位皆為選填</p>
                       </div>
                       <!-- 3-2右側表單區塊 -->
-                       <div class="form-side-width">
+                       <div class="col-lg-9">
                         <!-- 3-2-1 核心專業領域 -->
                         <div class="mb-4">
                           <p class="mb-2">核心專業領域</p>
@@ -547,14 +556,14 @@
                       </div>
                     </div>
                     <!-- 4.教育背景 -->
-                    <div class="d-flex gap-4 pb-5 mb-5">
+                    <div class="row g-4 border-bottom pb-5 mb-5">
                       <!-- 4-1左側類別名稱 -->
-                      <div class="flex-shrink side-width">
+                      <div class="col-lg-3 d-flex justify-content-between d-lg-block">
                         <h2 class="fs-4 mb-3">教育背景</h2>
                           <p class="text-natural-50">欄位皆為選填</p>
                       </div>
                       <!-- 4-2右側表單區塊 -->
-                       <div class="form-side-width">
+                       <div class="col-lg-9">
                         <!-- 4-2-1 學歷背景-->
                         <div class="mb-4">
                           <div class="form-floating">
@@ -573,14 +582,14 @@
                     </div>
                   </form>
                   <!-- 6.送出按鈕 -->
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-secondary me-4">
+                  <div class="d-block d-lg-flex justify-content-lg-center flex-lg-nowrap m-4">
+                    <button type="button" class="btn btn-outline-natural-50 text-black me-lg-4 mb-3 mb-lg-0 w-100 mx-lg-2">
                       匯出 PDF
                       <span class="material-icons-outlined align-bottom">
                       chevron_right
                       </span>
                     </button>
-                    <button type="button" class="btn btn-dark">儲存更新
+                    <button type="button" class="btn btn-dark me-lg-4 mb-3 mb-lg-0 w-100 mx-lg-2">儲存更新
                       <span class="material-icons-outlined align-bottom">
                       chevron_right
                       </span>
@@ -595,30 +604,31 @@
 
 
     <footer class="navbar navbar-expand-lg bg-body-tertiary dorder-bottom">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">服務方案</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">關於職旅</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">聯絡我們</a>
-        </li>
-         <li class="nav-item me-3">
-          <a class="nav-link" href="#">隱私權政策</a>
-        </li>
-         <li class="nav-item me-3">
-          <a class="nav-link" href="#">用戶條款</a>
-        </li>
-      </ul>
-    </div>
-        <p>Copyright © 2025 職旅 workway. All rights reserved.</p>
+  <div class="container d-flex flex-lg-row flex-column align-items-center justify-content-between">
+    <!-- 底下導覽列（響應式不收合） -->
+    <ul class="navbar-nav flex-row flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+      <li class="nav-item me-lg-3 mb-2">
+        <a class="nav-link text-center px-2 text-black" href="#">服務方案</a>
+      </li>
+      <li class="nav-item me-lg-3 mb-2">
+        <a class="nav-link text-center px-2 text-black" href="#">關於職旅</a>
+      </li>
+      <li class="nav-item me-lg-3 mb-2">
+        <a class="nav-link text-center px-2 text-black" href="#">聯絡我們</a>
+      </li>
+      <li class="nav-item me-lg-3 mb-2">
+        <a class="nav-link text-center px-2 text-black" href="#">隱私權政策</a>
+      </li>
+      <li class="nav-item me-lg-3 mb-2">
+        <a class="nav-link text-center px-2 text-black" href="#">用戶條款</a>
+      </li>
+    </ul>
+      <!-- 版權 -->
+       <div>
+        <p class="text-natural-60 mb-0 text-center text-lg-end">
+          Copyright © 2025 職旅 workway. All rights reserved.
+        </p>
+       </div>
     </div>
 </footer>
   </body>
