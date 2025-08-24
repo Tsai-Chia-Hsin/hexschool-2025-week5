@@ -1,6 +1,14 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
+
+@import './utils/utilities';
+@import 'bootstrap/scss/utilities/api';
+
+@import "bootstrap/scss/utilities/api";
+
+@import "bootstrap/scss/utilities/api";
+
 @import './base/base.scss';
 
 @import './layout/header.scss';
